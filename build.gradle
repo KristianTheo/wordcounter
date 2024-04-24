@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'wordcounter'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    testImplementation 'org.mockito:mockito-core:4.3.1'
+    testImplementation 'org.mockito:mockito-junit-jupiter:4.3.1'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'wordcounter.WordCounterApplication'
+    }
+}
+
+run {
+    mainClassName = 'wordcounter.WordCounterApplication'
+    classpath = sourceSets.main.runtimeClasspath
+    args project.hasProperty('args') ? project.args.split() : []
+}
+
+test {
+    useJUnitPlatform()
+}
+

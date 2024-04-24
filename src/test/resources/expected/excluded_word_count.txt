@@ -1,0 +1,10 @@
+lacinia 15
+lorem 15
+tempor 10
+mauris 27
+vitae 40
+tempus 16
+pretium 15
+erat 18
+nunc 37
+sit 46

@@ -1,0 +1,9 @@
+lectus 18
+luctus 10
+ligula 18
+lobortis 13
+lacus 22
+laoreet 11
+leo 19
+libero 19
+litora 1

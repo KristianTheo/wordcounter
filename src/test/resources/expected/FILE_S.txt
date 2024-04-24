@@ -1,0 +1,12 @@
+sed 58
+suspendisse 15
+sodales 11
+suscipit 8
+senectus 2
+sapien 18
+sem 15
+sociosqu 1
+semper 10
+sagittis 14
+scelerisque 22
+sollicitudin 16
