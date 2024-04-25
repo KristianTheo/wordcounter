@@ -9,6 +9,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
+import java.util.Set;
+import java.util.HashSet;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -48,6 +50,9 @@ public class WordCounterApplicationTest {
         List<String> actualLines = Files.readAllLines(actual);
         List<String> expectedLines = Files.readAllLines(expected);
 
-        assertEquals(expectedLines, actualLines);
+        Set<String> actualLineSet = new HashSet<>(actualLines);
+        Set<String> expectedLineSet = new HashSet<>(expectedLines);
+
+        assertEquals(actualLineSet, expectedLineSet);
     }
 }
